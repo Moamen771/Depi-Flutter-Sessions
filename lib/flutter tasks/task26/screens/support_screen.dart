@@ -7,7 +7,7 @@ class SupportScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.purple.shade800,
+        backgroundColor: Colors.cyan.shade800,
         iconTheme: IconThemeData(color: Colors.white),
         title: Text(
           'Support',
@@ -40,7 +40,7 @@ class SupportScreen extends StatelessWidget {
                       onPressed: () {},
                       icon: Icon(
                         Icons.send,
-                        color: Colors.purple.shade800,
+                        color: Colors.cyan.shade800,
                         size: 30,
                       )),
                   border: OutlineInputBorder(borderSide: BorderSide.none),

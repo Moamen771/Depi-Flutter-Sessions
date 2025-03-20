@@ -61,7 +61,7 @@ class InfoScreen extends StatelessWidget {
                 Text(
                   'description',
                   style: TextStyle(
-                    color: Colors.purple.shade800,
+                    color: Colors.cyan.shade800,
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                   ),
@@ -82,7 +82,7 @@ class InfoScreen extends StatelessWidget {
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.purple.shade800,
+                            backgroundColor: Colors.cyan.shade800,
                             foregroundColor: Colors.white,
                             padding: EdgeInsets.all(8)),
                         child: Text(
@@ -99,7 +99,7 @@ class InfoScreen extends StatelessWidget {
                               builder: (context) => SupportScreen(),
                             )),
                         style: OutlinedButton.styleFrom(
-                            backgroundColor: Colors.purple.shade800,
+                            backgroundColor: Colors.cyan.shade800,
                             foregroundColor: Colors.white,
                             padding: EdgeInsets.all(12)),
                         icon: Icon(
