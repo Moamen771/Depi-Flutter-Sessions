@@ -20,9 +20,9 @@ class HomeScreen extends StatelessWidget {
       },
       {
         'image':
-            'https://www.sony-mea.com/image/2391ae5de6d0a34c41b28c03905f2ddc?fmt=png-alpha&resMode=bisharp&wid=384',
-        'txt': 'Mobile',
-        'price': '9,500'
+            'https://media.oppostore.co.uk/catalog/product/a/4/a40_purple_1.png?width=380&height=380&store=default&image-type=small_image',
+        'txt': 'Oppo',
+        'price': '10,150'
       },
       {
         'image':
@@ -62,9 +62,9 @@ class HomeScreen extends StatelessWidget {
       },
       {
         'image':
-            'https://media.oppostore.co.uk/catalog/product/a/4/a40_purple_1.png?width=380&height=380&store=default&image-type=small_image',
-        'txt': 'Oppo',
-        'price': '10,150'
+            'https://opsg-img-cdn-gl.heytapimg.com/epb/202412/19/AceLeaXtntKw1AZf.png',
+        'txt': 'Mobile',
+        'price': '9,500'
       },
       {
         'image':

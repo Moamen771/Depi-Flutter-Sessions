@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttersessions/flutter%20tasks/task26/screens/login_screen.dart';
+import 'package:fluttersessions/sessions/4th_session/user_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      theme: ThemeData(
+        textSelectionTheme:
+            TextSelectionThemeData(selectionHandleColor: Colors.cyan.shade800),
+      ),
+      home: UserScreen(),
     );
   }
 }

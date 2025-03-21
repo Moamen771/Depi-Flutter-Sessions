@@ -73,6 +73,7 @@ class LoginScreen extends StatelessWidget {
                         children: [
                           TextFormField(
                             keyboardType: TextInputType.emailAddress,
+                            cursorColor: Colors.cyan.shade800,
                             decoration: const InputDecoration(
                               hintText: "Email or phone number",
                               hintStyle: TextStyle(color: Colors.grey),
@@ -98,7 +99,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        Navigator.push(
+                        Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
                               builder: (context) => HomeScreen(),
