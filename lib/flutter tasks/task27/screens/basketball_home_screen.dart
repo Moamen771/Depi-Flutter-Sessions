@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttersessions/colors/my_colors.dart';
+import 'package:fluttersessions/flutter%20tasks/task27/screens/show_players_screen.dart';
 import 'package:fluttersessions/flutter%20tasks/task27/widgets/points_button.dart';
 
 class BasketballHomeScreen extends StatefulWidget {
@@ -24,58 +25,64 @@ class _BasketballHomeScreenState extends State<BasketballHomeScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Column(
-                spacing: 10,
-                children: [
-                  Text(
-                    'Team A',
-                    style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-                  ),
-                  FittedBox(
-                    child: Text(
-                      teamAScore.toString(),
+              Expanded(
+                child: Column(
+                  spacing: 10,
+                  children: [
+                    Text(
+                      'Team A',
                       style: TextStyle(
-                        fontSize: 80,
+                          color: MyColors.darkerColor,
+                          fontSize: 32,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    FittedBox(
+                      child: Text(
+                        teamAScore.toString(),
+                        style: TextStyle(
+                          color: MyColors.darkerColor,
+                          fontSize: 100,
+                        ),
                       ),
                     ),
-                  ),
-                  PointsButton(
-                    txt: '+2',
-                    onPressed: () {
-                      setState(() {
-                        teamAScore += 2;
-                      });
-                    },
-                  ),
-                  PointsButton(
-                    txt: '+3',
-                    onPressed: () {
-                      setState(() {
-                        teamAScore += 3;
-                      });
-                    },
-                  ),
-                  PointsButton(
-                    txt: '-2',
-                    onPressed: () {
-                      setState(() {
-                        if (teamAScore > 0) {
-                          teamAScore -= 2;
-                        }
-                      });
-                    },
-                  ),
-                  PointsButton(
-                    txt: '-3',
-                    onPressed: () {
-                      setState(() {
-                        if (teamAScore > 0) {
-                          teamAScore -= 3;
-                        }
-                      });
-                    },
-                  ),
-                ],
+                    PointsButton(
+                      txt: '+2',
+                      onPressed: () {
+                        setState(() {
+                          teamAScore += 2;
+                        });
+                      },
+                    ),
+                    PointsButton(
+                      txt: '+3',
+                      onPressed: () {
+                        setState(() {
+                          teamAScore += 3;
+                        });
+                      },
+                    ),
+                    PointsButton(
+                      txt: '-2',
+                      onPressed: () {
+                        setState(() {
+                          if (teamAScore > 0) {
+                            teamAScore -= 2;
+                          }
+                        });
+                      },
+                    ),
+                    PointsButton(
+                      txt: '-3',
+                      onPressed: () {
+                        setState(() {
+                          if (teamAScore > 0) {
+                            teamAScore -= 3;
+                          }
+                        });
+                      },
+                    ),
+                  ],
+                ),
               ),
               SizedBox(
                 height: 420,
@@ -84,62 +91,68 @@ class _BasketballHomeScreenState extends State<BasketballHomeScreen> {
                   color: MyColors.darkerColor,
                 ),
               ),
-              Column(
-                spacing: 10,
-                children: [
-                  Text(
-                    'Team B',
-                    style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-                  ),
-                  FittedBox(
-                    child: Text(
-                      teamBScore.toString(),
+              Expanded(
+                child: Column(
+                  spacing: 10,
+                  children: [
+                    Text(
+                      'Team B',
                       style: TextStyle(
-                        fontSize: 80,
+                          color: MyColors.darkerColor,
+                          fontSize: 32,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    FittedBox(
+                      child: Text(
+                        teamBScore.toString(),
+                        style: TextStyle(
+                          color: MyColors.darkerColor,
+                          fontSize: 100,
+                        ),
                       ),
                     ),
-                  ),
-                  PointsButton(
-                    txt: '+2',
-                    onPressed: () {
-                      setState(() {
-                        teamBScore += 2;
-                      });
-                    },
-                  ),
-                  PointsButton(
-                    txt: '+3',
-                    onPressed: () {
-                      setState(() {
-                        teamBScore += 3;
-                      });
-                    },
-                  ),
-                  PointsButton(
-                    txt: '-2',
-                    onPressed: () {
-                      setState(() {
-                        if (teamBScore > 0) {
-                          teamBScore -= 2;
-                        }
-                      });
-                    },
-                  ),
-                  PointsButton(
-                    txt: '-3',
-                    onPressed: () {
-                      setState(() {
-                        if (teamBScore > 0) {
-                          teamBScore -= 3;
-                        }
-                      });
-                    },
-                  ),
-                ],
+                    PointsButton(
+                      txt: '+2',
+                      onPressed: () {
+                        setState(() {
+                          teamBScore += 2;
+                        });
+                      },
+                    ),
+                    PointsButton(
+                      txt: '+3',
+                      onPressed: () {
+                        setState(() {
+                          teamBScore += 3;
+                        });
+                      },
+                    ),
+                    PointsButton(
+                      txt: '-2',
+                      onPressed: () {
+                        setState(() {
+                          if (teamBScore > 0) {
+                            teamBScore -= 2;
+                          }
+                        });
+                      },
+                    ),
+                    PointsButton(
+                      txt: '-3',
+                      onPressed: () {
+                        setState(() {
+                          if (teamBScore > 0) {
+                            teamBScore -= 3;
+                          }
+                        });
+                      },
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
-          ElevatedButton(
+          ElevatedButton.icon(
             onPressed: () {
               setState(() {
                 teamAScore = 0;
@@ -150,12 +163,17 @@ class _BasketballHomeScreenState extends State<BasketballHomeScreen> {
               backgroundColor: MyColors.darkerColor,
               foregroundColor: MyColors.lighterColor,
               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              minimumSize: Size(200, 50),
+              minimumSize: Size(220, 60),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
               ),
             ),
-            child: Text(
+            icon: Icon(
+              Icons.replay,
+              size: 24,
+              color: MyColors.lighterColor,
+            ),
+            label: Text(
               'Reset',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
@@ -163,7 +181,11 @@ class _BasketballHomeScreenState extends State<BasketballHomeScreen> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ShowPlayersScreen(),
+            )),
         backgroundColor: MyColors.lightColor,
         foregroundColor: MyColors.darkerColor,
         child: Icon(

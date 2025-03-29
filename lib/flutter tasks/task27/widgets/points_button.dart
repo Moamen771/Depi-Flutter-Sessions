@@ -14,14 +14,18 @@ class PointsButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(5.0),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-            backgroundColor: MyColors.darkColor,
-            foregroundColor: MyColors.lighterColor,
-            padding: EdgeInsets.all(16),
-            minimumSize: Size(100, 50)),
+          backgroundColor: MyColors.darkColor,
+          foregroundColor: MyColors.lighterColor,
+          padding: EdgeInsets.all(16),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          minimumSize: Size.fromHeight(50),
+        ),
         child: Text(
           txt,
           style: TextStyle(fontSize: 24),
