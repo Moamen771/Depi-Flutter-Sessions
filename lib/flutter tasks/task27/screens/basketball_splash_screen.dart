@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:fluttersessions/colors/my_colors.dart';
 import 'package:fluttersessions/flutter%20tasks/task27/screens/on_boarding_screen.dart';
 
-class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
+class BasketballSplashScreen extends StatefulWidget {
+  const BasketballSplashScreen({super.key});
 
   @override
-  State<SplashScreen> createState() => _SplashScreenState();
+  State<BasketballSplashScreen> createState() => _BasketballSplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _BasketballSplashScreenState extends State<BasketballSplashScreen> {
   @override
   void initState() {
     Future.delayed(Duration(seconds: 4), () {

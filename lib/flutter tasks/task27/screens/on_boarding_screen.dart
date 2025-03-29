@@ -42,7 +42,7 @@ class OnBoardingScreen extends StatelessWidget {
         ),
       ),
       done: Text(
-        "Done",
+        "Start",
         style: TextStyle(
           color: MyColors.darkerColor,
           fontSize: 20,
