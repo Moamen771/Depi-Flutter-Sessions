@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttersessions/flutter%20tasks/task28/screens/ecommerce_home.dart';
 import 'package:fluttersessions/flutter%20tasks/task28/screens/signup_screen.dart';
 
 class ECommerceLogin extends StatelessWidget {
@@ -60,11 +61,11 @@ class ECommerceLogin extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                // Navigator.pushReplacement(
-                //     context,
-                //     MaterialPageRoute(
-                //       builder: (context) => HomeScreen(),
-                //     ));
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => EcommerceHome(),
+                    ));
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red.shade400,
