@@ -20,7 +20,6 @@ class EcommerceCart extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             spacing: 10,
             children: [
-              SizedBox(height: 10),
               Container(
                 margin: EdgeInsets.symmetric(vertical: 10),
                 height: 80,

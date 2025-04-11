@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttersessions/flutter%20tasks/task28/screens/ecommerce_onboarding.dart';
+import 'package:fluttersessions/flutter%20tasks/task28_29/screens/ecommerce_onboarding.dart';
 
 class ECommerceSplash extends StatefulWidget {
   const ECommerceSplash({super.key});

@@ -1,7 +1,7 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttersessions/flutter%20tasks/task28/screens/ecommerce_favourite.dart';
-import 'package:fluttersessions/flutter%20tasks/task28/screens/ecommerce_profile.dart';
+import 'package:fluttersessions/flutter%20tasks/task28_29/screens/ecommerce_favourite.dart';
+import 'package:fluttersessions/flutter%20tasks/task28_29/screens/ecommerce_profile.dart';
 import 'ecommerce_cart.dart';
 import 'ecommerce_home_screen.dart';
 

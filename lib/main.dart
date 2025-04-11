@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttersessions/flutter%20tasks/task28/screens/ecommerce_home.dart';
-import 'package:fluttersessions/flutter%20tasks/task28/screens/ecommerce_splash.dart';
+import 'flutter tasks/task28_29/screens/ecommerce_home.dart';
 
 void main() {
   runApp(const MyApp());
