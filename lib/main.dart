@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttersessions/flutter%20tasks/task28/screens/ecommerce_home.dart';
 import 'package:fluttersessions/flutter%20tasks/task28/screens/ecommerce_splash.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ECommerceSplash(),
+      home: EcommerceHome(),
     );
   }
 }
