@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:fluttersessions/colors/my_colors.dart';
+import 'package:fluttersessions/flutter%20tasks/task28_29/models/product.dart';
+import 'package:fluttersessions/flutter%20tasks/task28_29/widgets/home/home_list_view.dart';
+
+import '../widgets/home/list_view _item.dart';
 
 class EcommerceHomeScreen extends StatelessWidget {
   const EcommerceHomeScreen({super.key});
@@ -109,79 +112,7 @@ class EcommerceHomeScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-
-                //TODO: ListView
-
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SizedBox(
-                      height: MediaQuery.of(context).size.height * .25,
-                      child: AspectRatio(
-                        aspectRatio: 2.8 / 4,
-                        child: Stack(
-                          alignment: Alignment.topRight,
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                color: Colors.red,
-                                borderRadius: BorderRadius.circular(16),
-                                image: DecorationImage(
-                                  image: AssetImage(
-                                      'assets/e-commerce/image1.jpg'),
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            IconButton(
-                              onPressed: () {},
-                              style: IconButton.styleFrom(
-                                backgroundColor: Colors.white,
-                                foregroundColor: Colors.red,
-                                padding: EdgeInsets.all(3),
-                                minimumSize: Size(30, 30),
-                              ),
-                              icon: Icon(
-                                Icons.favorite,
-                                size: 26,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      'T-Shirt',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Icon(
-                          Icons.star,
-                          color: Colors.amber,
-                        ),
-                        Text('(55)'),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          '\$300',
-                          style: TextStyle(
-                            color: Colors.red,
-                            fontSize: 18,
-                          ),
-                        ),
-                      ],
-                    )
-                  ],
-                )
+                HomeListView(),
               ],
             ),
           ),
