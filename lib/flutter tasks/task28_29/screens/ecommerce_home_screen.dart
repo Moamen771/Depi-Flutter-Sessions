@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fluttersessions/flutter%20tasks/task28_29/models/product.dart';
 import 'package:fluttersessions/flutter%20tasks/task28_29/widgets/home/home_list_view.dart';
-
-import '../widgets/home/list_view _item.dart';
+import '../widgets/home/newest_product_list_view.dart';
 
 class EcommerceHomeScreen extends StatelessWidget {
   const EcommerceHomeScreen({super.key});
@@ -15,7 +13,8 @@ class EcommerceHomeScreen extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: SingleChildScrollView(
             child: Column(
-              spacing: 30,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              spacing: 20,
               children: [
                 Row(
                   children: [
@@ -63,8 +62,9 @@ class EcommerceHomeScreen extends StatelessWidget {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                      color: Colors.amber.shade50,
-                      borderRadius: BorderRadius.circular(16)),
+                    color: Colors.amber.shade50,
+                    borderRadius: BorderRadius.circular(16),
+                  ),
                   child: Image.asset('assets/e-commerce/freed.png'),
                 ),
                 Row(
@@ -113,6 +113,14 @@ class EcommerceHomeScreen extends StatelessWidget {
                   ],
                 ),
                 HomeListView(),
+                Text(
+                  'Newest Products',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                NewestProductListView(),
               ],
             ),
           ),

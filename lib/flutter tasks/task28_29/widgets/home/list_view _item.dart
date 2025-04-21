@@ -26,17 +26,20 @@ class ListViewItem extends StatelessWidget {
                 ),
               ),
             ),
-            IconButton(
-              onPressed: () {},
-              style: IconButton.styleFrom(
-                backgroundColor: Colors.white,
-                foregroundColor: Colors.red,
-                padding: EdgeInsets.all(3),
-                minimumSize: Size(30, 30),
-              ),
-              icon: Icon(
-                Icons.favorite,
-                size: 26,
+            Padding(
+              padding: const EdgeInsets.only(right: 8.0),
+              child: IconButton(
+                onPressed: () {},
+                style: IconButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  foregroundColor: Colors.red,
+                  padding: EdgeInsets.all(3),
+                  minimumSize: Size(30, 30),
+                ),
+                icon: Icon(
+                  Icons.favorite,
+                  size: 26,
+                ),
               ),
             )
           ],
