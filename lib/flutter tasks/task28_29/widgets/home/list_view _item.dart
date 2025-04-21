@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fluttersessions/flutter%20tasks/task28_29/models/product.dart';
 
+import '../../screens/product_screen.dart';
+
 class ListViewItem extends StatelessWidget {
   const ListViewItem({super.key, required this.product});
 
@@ -11,38 +13,45 @@ class ListViewItem extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Stack(
-          alignment: Alignment.topRight,
-          children: [
-            Container(
-              height: MediaQuery.of(context).size.height * .25,
-              width: MediaQuery.of(context).size.height * .18,
-              margin: EdgeInsets.symmetric(horizontal: 8),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16),
-                image: DecorationImage(
-                  image: AssetImage(product.image),
-                  fit: BoxFit.fill,
+        InkWell(
+          onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ProductScreen(),
+              )),
+          child: Stack(
+            alignment: Alignment.topRight,
+            children: [
+              Container(
+                height: MediaQuery.of(context).size.height * .25,
+                width: MediaQuery.of(context).size.height * .18,
+                margin: EdgeInsets.symmetric(horizontal: 8),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(16),
+                  image: DecorationImage(
+                    image: AssetImage(product.image),
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(right: 8.0),
-              child: IconButton(
-                onPressed: () {},
-                style: IconButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  foregroundColor: Colors.red,
-                  padding: EdgeInsets.all(3),
-                  minimumSize: Size(30, 30),
+              Padding(
+                padding: const EdgeInsets.only(right: 8.0),
+                child: IconButton(
+                  onPressed: () {},
+                  style: IconButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    foregroundColor: Colors.red,
+                    padding: EdgeInsets.all(3),
+                    minimumSize: Size(30, 30),
+                  ),
+                  icon: Icon(
+                    Icons.favorite,
+                    size: 26,
+                  ),
                 ),
-                icon: Icon(
-                  Icons.favorite,
-                  size: 26,
-                ),
-              ),
-            )
-          ],
+              )
+            ],
+          ),
         ),
         SizedBox(
           height: 10,
