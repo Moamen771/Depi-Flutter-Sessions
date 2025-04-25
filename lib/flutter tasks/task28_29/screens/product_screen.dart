@@ -1,6 +1,5 @@
 import 'package:fan_carousel_image_slider/fan_carousel_image_slider.dart';
 import 'package:flutter/material.dart';
-
 import '../models/product.dart';
 import 'ecommerce_cart.dart';
 
