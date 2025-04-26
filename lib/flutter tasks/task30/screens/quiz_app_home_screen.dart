@@ -75,15 +75,17 @@ class QuizAppHomeScreen extends StatelessWidget {
                               onPressed:
                                   questionIndex.value == 0 ? start : restart,
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.grey.shade200,
-                                foregroundColor: Colors.black,
+                                backgroundColor: Colors.black,
+                                foregroundColor: Colors.white,
                                 padding: const EdgeInsets.all(8),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(12),
                                 ),
                               ),
                               child: Text(
-                                questionIndex.value == 0 ? 'Start' : 'Restart',
+                                (questionIndex.value == 0)
+                                    ? 'Start'
+                                    : 'Restart',
                                 style: const TextStyle(fontSize: 20),
                               ),
                             ),
@@ -91,21 +93,23 @@ class QuizAppHomeScreen extends StatelessWidget {
                   ),
                   Expanded(
                     child: Obx(
-                      () => ElevatedButton(
-                        onPressed: isStarted.value ? next : null,
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.grey.shade200,
-                          foregroundColor: Colors.black,
-                          padding: const EdgeInsets.all(8),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                        ),
-                        child: const Text(
-                          'Next',
-                          style: TextStyle(fontSize: 20),
-                        ),
-                      ),
+                      () => isStarted.value == false
+                          ? const SizedBox()
+                          : ElevatedButton(
+                              onPressed: next,
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.black,
+                                foregroundColor: Colors.white,
+                                padding: const EdgeInsets.all(8),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                              ),
+                              child: Text(
+                                questionIndex.value > 2 ? 'Finish' : 'Next',
+                                style: const TextStyle(fontSize: 20),
+                              ),
+                            ),
                     ),
                   ),
                 ],
@@ -141,52 +145,56 @@ class QuizAppHomeScreen extends StatelessWidget {
       return;
     }
     if (answerController.text.toLowerCase() ==
-        capitals[questionIndex.value].toString().toLowerCase()) {
+        capitals[questionIndex.value].toLowerCase()) {
       score.value++;
     }
-    if (answerController.text.isNotEmpty) {
-      answerController.text = '';
+    answerController.clear();
+
+    if (questionIndex.value == countries.length - 1) {
+      finish();
+      return;
     }
+
     questionIndex.value++;
-    if (questionIndex.value < countries.length) {
-      question.value =
-          'What is the capital of ${countries[questionIndex.value]}?';
-    } else {
-      Get.dialog(
-        AlertDialog(
-          backgroundColor: Colors.white,
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(
-                'Your score is ',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
+    question.value =
+        'What is the capital of ${countries[questionIndex.value]}?';
+  }
+
+  void finish() {
+    Get.dialog(
+      AlertDialog(
+        backgroundColor: Colors.white,
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              'Your score is ',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
               ),
-              Text(
-                score.value.toString(),
-                style: TextStyle(
-                    color: score.value > countries.length / 2
-                        ? Colors.green
-                        : Colors.red,
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  restart();
-                  isStarted.value = false;
-                  Get.back();
-                },
-                child: const Text('Restart'),
-              ),
-            ],
-          ),
+            ),
+            Text(
+              score.value.toString(),
+              style: TextStyle(
+                  color: score.value > countries.length / 2
+                      ? Colors.green
+                      : Colors.red,
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                restart();
+                isStarted.value = false;
+                Get.back();
+              },
+              child: const Text('Restart'),
+            ),
+          ],
         ),
-      );
-    }
+      ),
+    );
   }
 }
