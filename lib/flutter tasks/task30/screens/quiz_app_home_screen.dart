@@ -51,7 +51,7 @@ class QuizAppHomeScreen extends StatelessWidget {
                     controller: answerController,
                     enabled: isTextFieldEnabled.value,
                     textInputAction: TextInputAction.done,
-                    autofocus: true,
+                    autofocus: isTextFieldEnabled.value,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return "Please enter your answer";
@@ -70,7 +70,7 @@ class QuizAppHomeScreen extends StatelessWidget {
                   Expanded(
                     child: Obx(
                       () => isStarted.value && questionIndex.value == 0
-                          ? const SizedBox()
+                          ? const SizedBox.shrink()
                           : ElevatedButton(
                               onPressed:
                                   questionIndex.value == 0 ? start : restart,
@@ -94,7 +94,7 @@ class QuizAppHomeScreen extends StatelessWidget {
                   Expanded(
                     child: Obx(
                       () => isStarted.value == false
-                          ? const SizedBox()
+                          ? const SizedBox.shrink()
                           : ElevatedButton(
                               onPressed: next,
                               style: ElevatedButton.styleFrom(
@@ -167,9 +167,12 @@ class QuizAppHomeScreen extends StatelessWidget {
         content: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          spacing: 5,
           children: [
             const Text(
               'Your score is ',
+              textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -177,6 +180,7 @@ class QuizAppHomeScreen extends StatelessWidget {
             ),
             Text(
               score.value.toString(),
+              textAlign: TextAlign.center,
               style: TextStyle(
                   color: score.value > countries.length / 2
                       ? Colors.green
@@ -184,12 +188,30 @@ class QuizAppHomeScreen extends StatelessWidget {
                   fontSize: 32,
                   fontWeight: FontWeight.bold),
             ),
+            Text(
+              score.value > countries.length / 2
+                  ? 'Great job!'
+                  : 'Better luck next time!',
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 20),
+            ),
+            const SizedBox(
+              height: 24,
+            ),
             ElevatedButton(
               onPressed: () {
                 restart();
                 isStarted.value = false;
                 Get.back();
               },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.black,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.all(8),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
               child: const Text('Restart'),
             ),
           ],
