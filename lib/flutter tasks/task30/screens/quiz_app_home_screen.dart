@@ -161,6 +161,7 @@ class QuizAppHomeScreen extends StatelessWidget {
   }
 
   void finish() {
+    isStarted.value = false;
     Get.dialog(
       AlertDialog(
         backgroundColor: Colors.white,
