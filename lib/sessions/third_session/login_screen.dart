@@ -25,16 +25,16 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 Image.network(
                     'https://cdn-icons-png.flaticon.com/128/12500/12500060.png'),
-                Text(
+                const Text(
                   'Login',
                   style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 TextFormField(
                   keyboardType: TextInputType.emailAddress,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: 'enter your email',
                     label: Text(
                       'E-mail',
@@ -54,11 +54,11 @@ class _LoginScreenState extends State<LoginScreen> {
                   obscureText: showPassword,
                   decoration: InputDecoration(
                     hintText: 'enter your password',
-                    label: Text(
+                    label: const Text(
                       'Password',
                       style: TextStyle(color: Colors.black),
                     ),
-                    prefixIcon: Icon(Icons.lock),
+                    prefixIcon: const Icon(Icons.lock),
                     suffixIcon: IconButton(
                       onPressed: () {
                         setState(() {
@@ -68,18 +68,18 @@ class _LoginScreenState extends State<LoginScreen> {
                         });
                       },
                       icon: showPassword == true
-                          ? Icon(Icons.visibility)
-                          : Icon(Icons.visibility_off),
+                          ? const Icon(Icons.visibility)
+                          : const Icon(Icons.visibility_off),
                     ),
-                    enabledBorder: OutlineInputBorder(
+                    enabledBorder: const OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.teal),
                     ),
-                    focusedBorder: OutlineInputBorder(
+                    focusedBorder: const OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.teal, width: 3),
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 ElevatedButton(
@@ -90,23 +90,23 @@ class _LoginScreenState extends State<LoginScreen> {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.teal,
                       foregroundColor: Colors.white,
-                      minimumSize: Size(double.infinity, 50),
-                      padding:
-                          EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+                      minimumSize: const Size(double.infinity, 50),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 12, horizontal: 24),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Login',
                       style: TextStyle(fontSize: 20),
                     )),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Don\'t have account?'),
+                    const Text('Don\'t have account?'),
                     TextButton(
                         onPressed: () => Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => SignupScreen(),
+                              builder: (context) => const SignupScreen(),
                             )),
                         child: Text(
                           'SignUp',

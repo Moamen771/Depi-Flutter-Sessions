@@ -14,7 +14,7 @@ class ShowPlayersScreen extends StatelessWidget {
         backgroundColor: MyColors.lighterColor,
         surfaceTintColor: MyColors.lighterColor,
         foregroundColor: MyColors.darkerColor,
-        title: Text(
+        title: const Text(
           'Players of the teams',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),

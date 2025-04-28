@@ -25,7 +25,7 @@ class UserScreen extends StatelessWidget {
             itemBuilder: (context, index) => UserItem(
                   user: users[index],
                 ),
-            separatorBuilder: (context, index) => Divider(
+            separatorBuilder: (context, index) => const Divider(
                   height: 10,
                   thickness: 1,
                   color: Colors.grey,
@@ -46,7 +46,7 @@ class UserItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 5),
+      margin: const EdgeInsets.symmetric(vertical: 5),
       decoration: BoxDecoration(
         color: Colors.grey,
         borderRadius: BorderRadius.circular(16),
@@ -62,11 +62,11 @@ class UserItem extends StatelessWidget {
             backgroundColor: Colors.grey.shade400,
             child: Text(
               user.id,
-              style: TextStyle(color: Colors.white, fontSize: 20),
+              style: const TextStyle(color: Colors.white, fontSize: 20),
             ),
           ),
           Padding(
-            padding: EdgeInsets.all(12),
+            padding: const EdgeInsets.all(12),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -74,16 +74,18 @@ class UserItem extends StatelessWidget {
               children: [
                 Text(
                   user.name,
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold, fontSize: 24),
                 ),
                 Text(
                   user.phone,
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                  style: const TextStyle(
+                      fontSize: 18, fontWeight: FontWeight.w600),
                 ),
               ],
             ),
           ),
-          Spacer(),
+          const Spacer(),
           IconButton(
             onPressed: () => Navigator.push(
               context,
@@ -95,9 +97,9 @@ class UserItem extends StatelessWidget {
               backgroundColor: Colors.grey.shade500,
               foregroundColor: Colors.white,
             ),
-            icon: Icon(Icons.phone),
+            icon: const Icon(Icons.phone),
           ),
-          SizedBox(
+          const SizedBox(
             width: 10,
           )
         ],

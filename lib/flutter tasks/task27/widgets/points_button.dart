@@ -20,15 +20,15 @@ class PointsButton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           backgroundColor: MyColors.darkColor,
           foregroundColor: MyColors.lighterColor,
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
-          minimumSize: Size.fromHeight(50),
+          minimumSize: const Size.fromHeight(50),
         ),
         child: Text(
           txt,
-          style: TextStyle(fontSize: 24),
+          style: const TextStyle(fontSize: 24),
         ),
       ),
     );

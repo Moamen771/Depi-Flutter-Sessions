@@ -8,22 +8,22 @@ class SupportScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.cyan.shade800,
-        iconTheme: IconThemeData(color: Colors.white),
-        title: Text(
+        iconTheme: const IconThemeData(color: Colors.white),
+        title: const Text(
           'Support',
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
       ),
       body: Stack(
         children: [
-          Column(
+          const Column(
             children: [],
           ),
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              padding: EdgeInsets.all(8),
-              margin: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(8),
+              margin: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                 color: Colors.grey[100],
                 borderRadius: BorderRadius.circular(50),
@@ -43,7 +43,7 @@ class SupportScreen extends StatelessWidget {
                         color: Colors.cyan.shade800,
                         size: 30,
                       )),
-                  border: OutlineInputBorder(borderSide: BorderSide.none),
+                  border: const OutlineInputBorder(borderSide: BorderSide.none),
                 ),
               ),
             ),

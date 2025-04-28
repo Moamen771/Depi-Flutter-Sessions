@@ -78,7 +78,7 @@ class HomeScreen extends StatelessWidget {
         padding: const EdgeInsets.all(12.0),
         child: SafeArea(
           child: CustomScrollView(
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             slivers: [
               SliverToBoxAdapter(
                 child: TextFormField(
@@ -99,7 +99,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SliverToBoxAdapter(
+              const SliverToBoxAdapter(
                 child: SizedBox(
                   height: 20,
                 ),
@@ -108,7 +108,7 @@ class HomeScreen extends StatelessWidget {
                 itemCount: itemList.length,
                 itemBuilder: (context, index) => Container(
                   height: 180,
-                  margin: EdgeInsets.symmetric(vertical: 5),
+                  margin: const EdgeInsets.symmetric(vertical: 5),
                   decoration: BoxDecoration(
                     color: Colors.grey,
                     borderRadius: BorderRadius.circular(16),
@@ -125,7 +125,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                       Expanded(
                         child: Padding(
-                          padding: EdgeInsets.all(12),
+                          padding: const EdgeInsets.all(12),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             spacing: 10,
@@ -133,14 +133,14 @@ class HomeScreen extends StatelessWidget {
                               FittedBox(
                                 child: Text(
                                   itemList[index]['txt'],
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 24),
                                 ),
                               ),
                               Text(
                                 itemList[index]['price'],
-                                style: TextStyle(
+                                style: const TextStyle(
                                     fontSize: 18, fontWeight: FontWeight.w600),
                               ),
                               ElevatedButton(
@@ -158,7 +158,7 @@ class HomeScreen extends StatelessWidget {
                                   backgroundColor: Colors.white,
                                   foregroundColor: Colors.black,
                                 ),
-                                child: Text('Get Now'),
+                                child: const Text('Get Now'),
                               )
                             ],
                           ),

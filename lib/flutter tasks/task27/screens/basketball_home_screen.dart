@@ -29,7 +29,7 @@ class _BasketballHomeScreenState extends State<BasketballHomeScreen> {
                 child: Column(
                   spacing: 10,
                   children: [
-                    Text(
+                    const Text(
                       'Team A',
                       style: TextStyle(
                           color: MyColors.darkerColor,
@@ -39,7 +39,7 @@ class _BasketballHomeScreenState extends State<BasketballHomeScreen> {
                     FittedBox(
                       child: Text(
                         teamAScore.toString(),
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: MyColors.darkerColor,
                           fontSize: 100,
                         ),
@@ -84,7 +84,7 @@ class _BasketballHomeScreenState extends State<BasketballHomeScreen> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 420,
                 child: VerticalDivider(
                   width: 1,
@@ -95,7 +95,7 @@ class _BasketballHomeScreenState extends State<BasketballHomeScreen> {
                 child: Column(
                   spacing: 10,
                   children: [
-                    Text(
+                    const Text(
                       'Team B',
                       style: TextStyle(
                           color: MyColors.darkerColor,
@@ -105,7 +105,7 @@ class _BasketballHomeScreenState extends State<BasketballHomeScreen> {
                     FittedBox(
                       child: Text(
                         teamBScore.toString(),
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: MyColors.darkerColor,
                           fontSize: 100,
                         ),
@@ -162,18 +162,18 @@ class _BasketballHomeScreenState extends State<BasketballHomeScreen> {
             style: ElevatedButton.styleFrom(
               backgroundColor: MyColors.darkerColor,
               foregroundColor: MyColors.lighterColor,
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              minimumSize: Size(220, 60),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              minimumSize: const Size(220, 60),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
               ),
             ),
-            icon: Icon(
+            icon: const Icon(
               Icons.replay,
               size: 24,
               color: MyColors.lighterColor,
             ),
-            label: Text(
+            label: const Text(
               'Reset',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
@@ -184,11 +184,11 @@ class _BasketballHomeScreenState extends State<BasketballHomeScreen> {
         onPressed: () => Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => ShowPlayersScreen(),
+              builder: (context) => const ShowPlayersScreen(),
             )),
         backgroundColor: MyColors.lightColor,
         foregroundColor: MyColors.darkerColor,
-        child: Icon(
+        child: const Icon(
           Icons.person_pin_rounded,
           size: 32,
         ),

@@ -41,7 +41,7 @@ class Task25 extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 spacing: 5,
                                 children: [
-                                  Text(
+                                  const Text(
                                     'Barry Lyon',
                                     style: TextStyle(
                                       fontSize: 22,
@@ -64,8 +64,8 @@ class Task25 extends StatelessWidget {
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(12),
-                              decoration: BoxDecoration(
+                              padding: const EdgeInsets.all(12),
+                              decoration: const BoxDecoration(
                                 border: Border(
                                   top: BorderSide(color: Colors.grey, width: 1),
                                 ),
@@ -117,7 +117,7 @@ class Task25 extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 spacing: 5,
                                 children: [
-                                  Text(
+                                  const Text(
                                     'Hortense Tinker',
                                     style: TextStyle(
                                       fontSize: 22,
@@ -140,8 +140,8 @@ class Task25 extends StatelessWidget {
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(12),
-                              decoration: BoxDecoration(
+                              padding: const EdgeInsets.all(12),
+                              decoration: const BoxDecoration(
                                 border: Border(
                                   top: BorderSide(color: Colors.grey, width: 1),
                                 ),
@@ -199,7 +199,7 @@ class Task25 extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 spacing: 5,
                                 children: [
-                                  Text(
+                                  const Text(
                                     'Arlene Sharman',
                                     style: TextStyle(
                                       fontSize: 22,
@@ -222,8 +222,8 @@ class Task25 extends StatelessWidget {
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(12),
-                              decoration: BoxDecoration(
+                              padding: const EdgeInsets.all(12),
+                              decoration: const BoxDecoration(
                                 border: Border(
                                   top: BorderSide(color: Colors.grey, width: 1),
                                 ),
@@ -280,7 +280,7 @@ class Task25 extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 spacing: 5,
                                 children: [
-                                  Text(
+                                  const Text(
                                     'Angelica Geary',
                                     style: TextStyle(
                                       fontSize: 22,
@@ -303,8 +303,8 @@ class Task25 extends StatelessWidget {
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(12),
-                              decoration: BoxDecoration(
+                              padding: const EdgeInsets.all(12),
+                              decoration: const BoxDecoration(
                                 border: Border(
                                   top: BorderSide(color: Colors.grey, width: 1),
                                 ),
@@ -361,7 +361,7 @@ class Task25 extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 spacing: 5,
                                 children: [
-                                  Text(
+                                  const Text(
                                     'Carl Hambledon',
                                     style: TextStyle(
                                       fontSize: 22,
@@ -384,8 +384,8 @@ class Task25 extends StatelessWidget {
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(12),
-                              decoration: BoxDecoration(
+                              padding: const EdgeInsets.all(12),
+                              decoration: const BoxDecoration(
                                 border: Border(
                                   top: BorderSide(color: Colors.grey, width: 1),
                                 ),
@@ -443,7 +443,7 @@ class Task25 extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 spacing: 5,
                                 children: [
-                                  Text(
+                                  const Text(
                                     'Lowell Cristophers',
                                     style: TextStyle(
                                       fontSize: 22,
@@ -466,8 +466,8 @@ class Task25 extends StatelessWidget {
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(12),
-                              decoration: BoxDecoration(
+                              padding: const EdgeInsets.all(12),
+                              decoration: const BoxDecoration(
                                 border: Border(
                                   top: BorderSide(color: Colors.grey, width: 1),
                                 ),

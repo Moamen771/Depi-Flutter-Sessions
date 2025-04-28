@@ -6,23 +6,24 @@ class FirstTask extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(246, 240, 240, 1), //rgb(246, 240, 240)
+      backgroundColor: const Color.fromRGBO(246, 240, 240, 1),
+      //rgb(246, 240, 240)
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         foregroundColor: Colors.black,
-        leading: Padding(
-          padding: const EdgeInsets.only(left: 24.0),
+        leading: const Padding(
+          padding: EdgeInsets.only(left: 24.0),
           child: Icon(Icons.account_circle),
         ),
-        title: Text(
+        title: const Text(
           'My CV',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         actions: [
-          Icon(
+          const Icon(
             Icons.favorite,
           ),
-          SizedBox(
+          const SizedBox(
             width: 24,
           )
         ],
@@ -33,7 +34,7 @@ class FirstTask extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           spacing: 20,
           children: [
-            Text(
+            const Text(
               'Flutter Developer',
               style: TextStyle(
                   fontSize: 32,
@@ -43,11 +44,12 @@ class FirstTask extends StatelessWidget {
             Container(
               width: double.infinity,
               alignment: Alignment.center,
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
               decoration: BoxDecoration(
-                  color: Color.fromRGBO(242, 226, 177, 1), //rgb(242, 226, 177)
+                  color: const Color.fromRGBO(242, 226, 177, 1),
+                  //rgb(242, 226, 177)
                   borderRadius: BorderRadius.circular(16)),
-              child: Row(
+              child: const Row(
                 spacing: 20,
                 children: [
                   Icon(
@@ -65,11 +67,12 @@ class FirstTask extends StatelessWidget {
             Container(
               width: double.infinity,
               alignment: Alignment.center,
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
               decoration: BoxDecoration(
-                  color: Color.fromRGBO(242, 226, 177, 1), //rgb(213, 199, 163)
+                  color: const Color.fromRGBO(242, 226, 177, 1),
+                  //rgb(213, 199, 163)
                   borderRadius: BorderRadius.circular(16)),
-              child: Row(
+              child: const Row(
                 spacing: 20,
                 children: [
                   Icon(
@@ -87,11 +90,12 @@ class FirstTask extends StatelessWidget {
             Container(
               width: double.infinity,
               alignment: Alignment.center,
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
               decoration: BoxDecoration(
-                  color: Color.fromRGBO(242, 226, 177, 1), //rgb(189, 179, 149)
+                  color: const Color.fromRGBO(242, 226, 177, 1),
+                  //rgb(189, 179, 149)
                   borderRadius: BorderRadius.circular(16)),
-              child: Row(
+              child: const Row(
                 spacing: 20,
                 children: [
                   Icon(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttersessions/flutter%20tasks/task30/screens/quiz_app_home_screen.dart';
+import 'package:fluttersessions/flutter%20tasks/task31/screens/quiz_app_home_screen.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {

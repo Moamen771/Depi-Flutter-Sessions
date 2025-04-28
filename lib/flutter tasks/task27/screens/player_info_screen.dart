@@ -17,7 +17,7 @@ class PlayerInfoScreen extends StatelessWidget {
         foregroundColor: MyColors.darkerColor,
         title: Text(
           pLayer.name,
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
       ),
       body: Column(
@@ -42,7 +42,7 @@ class PlayerInfoScreen extends StatelessWidget {
                 children: [
                   Text(
                     pLayer.teamName,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.bold,
                     ),
@@ -50,21 +50,22 @@ class PlayerInfoScreen extends StatelessWidget {
                   Container(
                     width: double.infinity,
                     alignment: Alignment.center,
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 16, vertical: 24),
                     decoration: BoxDecoration(
                         color: MyColors.lightColor,
                         borderRadius: BorderRadius.circular(16)),
                     child: Row(
                       spacing: 20,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.numbers,
                           color: Colors.black,
                           size: 24,
                         ),
                         Text(
                           pLayer.tShirtNumber,
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: MyColors.darkerColor,
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
@@ -76,21 +77,22 @@ class PlayerInfoScreen extends StatelessWidget {
                   Container(
                     width: double.infinity,
                     alignment: Alignment.center,
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 16, vertical: 24),
                     decoration: BoxDecoration(
                         color: MyColors.lightColor,
                         borderRadius: BorderRadius.circular(16)),
                     child: Row(
                       spacing: 20,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.phone,
                           color: Colors.black,
                           size: 24,
                         ),
                         Text(
                           pLayer.phone,
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontSize: 24, fontWeight: FontWeight.bold),
                         ),
                       ],

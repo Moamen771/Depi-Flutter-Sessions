@@ -14,14 +14,14 @@ class ScrollScreen extends StatelessWidget {
             children: [
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.red.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text1',
                   style: TextStyle(
                     fontSize: 30,
@@ -32,14 +32,14 @@ class ScrollScreen extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.blue.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text2',
                   style: TextStyle(
                     fontSize: 30,
@@ -50,14 +50,14 @@ class ScrollScreen extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.teal.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text3',
                   style: TextStyle(
                     fontSize: 30,
@@ -68,14 +68,14 @@ class ScrollScreen extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.purple.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text4',
                   style: TextStyle(
                     fontSize: 30,
@@ -86,14 +86,14 @@ class ScrollScreen extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.red.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text1',
                   style: TextStyle(
                     fontSize: 30,
@@ -104,14 +104,14 @@ class ScrollScreen extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.blue.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text2',
                   style: TextStyle(
                     fontSize: 30,
@@ -122,14 +122,14 @@ class ScrollScreen extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.teal.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text3',
                   style: TextStyle(
                     fontSize: 30,
@@ -140,14 +140,14 @@ class ScrollScreen extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.purple.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text4',
                   style: TextStyle(
                     fontSize: 30,
@@ -158,14 +158,14 @@ class ScrollScreen extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.red.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text1',
                   style: TextStyle(
                     fontSize: 30,
@@ -176,14 +176,14 @@ class ScrollScreen extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.blue.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text2',
                   style: TextStyle(
                     fontSize: 30,
@@ -194,14 +194,14 @@ class ScrollScreen extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.teal.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text3',
                   style: TextStyle(
                     fontSize: 30,
@@ -212,14 +212,14 @@ class ScrollScreen extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.purple.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text4',
                   style: TextStyle(
                     fontSize: 30,
@@ -230,14 +230,14 @@ class ScrollScreen extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.red.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text1',
                   style: TextStyle(
                     fontSize: 30,
@@ -248,14 +248,14 @@ class ScrollScreen extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.blue.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text2',
                   style: TextStyle(
                     fontSize: 30,
@@ -266,14 +266,14 @@ class ScrollScreen extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.teal.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text3',
                   style: TextStyle(
                     fontSize: 30,
@@ -284,14 +284,14 @@ class ScrollScreen extends StatelessWidget {
               ),
               Container(
                 height: 100,
-                padding: EdgeInsets.all(16),
-                margin: EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 12),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.purple.shade800,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Text(
+                child: const Text(
                   'Text4',
                   style: TextStyle(
                     fontSize: 30,

@@ -13,7 +13,7 @@ PageViewModel onBoardingPage({required String img, required String txt}) {
         ),
         Text(
           txt,
-          style: TextStyle(
+          style: const TextStyle(
             color: MyColors.darkColor,
             fontSize: 24,
             fontWeight: FontWeight.bold,

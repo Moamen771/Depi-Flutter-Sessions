@@ -25,7 +25,7 @@ class PlayerCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
           child: Container(
             height: 150,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: MyColors.lightColor,
             ),
             child: Row(
@@ -45,7 +45,7 @@ class PlayerCard extends StatelessWidget {
                       FittedBox(
                         child: Text(
                           player.name,
-                          style: TextStyle(
+                          style: const TextStyle(
                               color: MyColors.darkerColor,
                               fontSize: 20,
                               fontWeight: FontWeight.bold),
@@ -56,7 +56,7 @@ class PlayerCard extends StatelessWidget {
                           player.teamName == 'Los Angeles Lakers'
                               ? 'Team A'
                               : 'Team B',
-                          style: TextStyle(
+                          style: const TextStyle(
                               color: MyColors.darkerColor,
                               fontSize: 20,
                               fontWeight: FontWeight.bold),

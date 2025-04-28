@@ -26,8 +26,8 @@ class LoginScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             spacing: 10,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 20.0, top: 100),
+              const Padding(
+                padding: EdgeInsets.only(left: 20.0, top: 100),
                 child: Text(
                   "Login",
                   style: TextStyle(
@@ -36,8 +36,8 @@ class LoginScreen extends StatelessWidget {
                       fontWeight: FontWeight.bold),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 20.0, bottom: 30),
+              const Padding(
+                padding: EdgeInsets.only(left: 20.0, bottom: 30),
                 child: Text(
                   "Welcome Back!",
                   style: TextStyle(fontSize: 20, color: Colors.white),
@@ -102,7 +102,7 @@ class LoginScreen extends StatelessWidget {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => HomeScreen(),
+                              builder: (context) => const HomeScreen(),
                             ));
                       },
                       style: ElevatedButton.styleFrom(
@@ -117,7 +117,7 @@ class LoginScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
+                        const Text(
                           "Don't have account?",
                           style: TextStyle(color: Colors.grey),
                         ),
@@ -126,7 +126,7 @@ class LoginScreen extends StatelessWidget {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => SignupScreen(),
+                                  builder: (context) => const SignupScreen(),
                                 ));
                           },
                           child: Text(

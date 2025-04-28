@@ -25,7 +25,7 @@ class OnBoardingScreen extends StatelessWidget {
       ],
       isProgressTap: true,
       showBackButton: true,
-      back: Text(
+      back: const Text(
         'Back',
         style: TextStyle(
           color: MyColors.darkerColor,
@@ -33,7 +33,7 @@ class OnBoardingScreen extends StatelessWidget {
           fontWeight: FontWeight.bold,
         ),
       ),
-      next: Text(
+      next: const Text(
         "Next",
         style: TextStyle(
           color: MyColors.darkerColor,
@@ -41,7 +41,7 @@ class OnBoardingScreen extends StatelessWidget {
           fontWeight: FontWeight.bold,
         ),
       ),
-      done: Text(
+      done: const Text(
         "Start",
         style: TextStyle(
           color: MyColors.darkerColor,
@@ -53,15 +53,15 @@ class OnBoardingScreen extends StatelessWidget {
         Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-              builder: (context) => BasketballHomeScreen(),
+              builder: (context) => const BasketballHomeScreen(),
             ));
       },
       dotsDecorator: DotsDecorator(
-        size: Size.square(10.0),
-        activeSize: Size(20.0, 10.0),
+        size: const Size.square(10.0),
+        activeSize: const Size(20.0, 10.0),
         activeColor: MyColors.darkColor,
         color: MyColors.lightColor,
-        spacing: EdgeInsets.symmetric(horizontal: 3.0),
+        spacing: const EdgeInsets.symmetric(horizontal: 3.0),
         activeShape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
       ),

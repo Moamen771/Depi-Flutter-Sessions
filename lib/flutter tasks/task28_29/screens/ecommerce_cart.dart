@@ -8,7 +8,7 @@ class EcommerceCart extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text(
+        title: const Text(
           'Cart',
           style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
         ),
@@ -21,7 +21,7 @@ class EcommerceCart extends StatelessWidget {
             spacing: 10,
             children: [
               Container(
-                margin: EdgeInsets.symmetric(vertical: 10),
+                margin: const EdgeInsets.symmetric(vertical: 10),
                 height: 80,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -44,14 +44,14 @@ class EcommerceCart extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'T-Shirt',
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Text(
+                        const Text(
                           'Hooded Jacket',
                           style: TextStyle(
                             color: Colors.grey,
@@ -69,19 +69,19 @@ class EcommerceCart extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Icon(Icons.remove),
-                    Text(
+                    const Icon(Icons.remove),
+                    const Text(
                       '1',
                       style: TextStyle(
                         fontSize: 18,
                       ),
                     ),
-                    Icon(Icons.add),
+                    const Icon(Icons.add),
                   ],
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: 10),
+                margin: const EdgeInsets.symmetric(vertical: 10),
                 height: 80,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -104,14 +104,14 @@ class EcommerceCart extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'Jacket',
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Text(
+                        const Text(
                           'Hooded Jacket',
                           style: TextStyle(
                             color: Colors.grey,
@@ -129,19 +129,19 @@ class EcommerceCart extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Icon(Icons.remove),
-                    Text(
+                    const Icon(Icons.remove),
+                    const Text(
                       '1',
                       style: TextStyle(
                         fontSize: 18,
                       ),
                     ),
-                    Icon(Icons.add),
+                    const Icon(Icons.add),
                   ],
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: 10),
+                margin: const EdgeInsets.symmetric(vertical: 10),
                 height: 80,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -164,14 +164,14 @@ class EcommerceCart extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'Child Jacket',
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Text(
+                        const Text(
                           'Hooded Jacket',
                           style: TextStyle(
                             color: Colors.grey,
@@ -189,19 +189,19 @@ class EcommerceCart extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Icon(Icons.remove),
-                    Text(
+                    const Icon(Icons.remove),
+                    const Text(
                       '1',
                       style: TextStyle(
                         fontSize: 18,
                       ),
                     ),
-                    Icon(Icons.add),
+                    const Icon(Icons.add),
                   ],
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: 10),
+                margin: const EdgeInsets.symmetric(vertical: 10),
                 height: 80,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -224,14 +224,14 @@ class EcommerceCart extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'Hooded',
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Text(
+                        const Text(
                           'Hooded Jacket',
                           style: TextStyle(
                             color: Colors.grey,
@@ -249,22 +249,22 @@ class EcommerceCart extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Icon(Icons.remove),
-                    Text(
+                    const Icon(Icons.remove),
+                    const Text(
                       '1',
                       style: TextStyle(
                         fontSize: 18,
                       ),
                     ),
-                    Icon(Icons.add),
+                    const Icon(Icons.add),
                   ],
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     'Select All',
                     style: TextStyle(
                       fontSize: 18,
@@ -274,7 +274,7 @@ class EcommerceCart extends StatelessWidget {
                   Checkbox(value: false, onChanged: (value) {})
                 ],
               ),
-              Divider(
+              const Divider(
                 height: 1,
                 color: Colors.black,
                 thickness: 1,
@@ -284,7 +284,7 @@ class EcommerceCart extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     'Total Payment',
                     style: TextStyle(
                       fontSize: 20,
@@ -301,16 +301,16 @@ class EcommerceCart extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.red.shade400,
                     foregroundColor: Colors.white,
-                    padding: EdgeInsets.all(16),
+                    padding: const EdgeInsets.all(16),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16))),
-                child: Text(
+                child: const Text(
                   'Checkout',
                   style: TextStyle(
                     fontSize: 20,

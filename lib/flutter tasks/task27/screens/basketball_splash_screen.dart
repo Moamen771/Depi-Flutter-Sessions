@@ -12,11 +12,11 @@ class BasketballSplashScreen extends StatefulWidget {
 class _BasketballSplashScreenState extends State<BasketballSplashScreen> {
   @override
   void initState() {
-    Future.delayed(Duration(seconds: 4), () {
+    Future.delayed(const Duration(seconds: 4), () {
       Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => OnBoardingScreen(),
+            builder: (context) => const OnBoardingScreen(),
           ));
     });
     super.initState();

@@ -38,14 +38,14 @@ class InfoScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               spacing: 20,
               children: [
-                BackButton(),
+                const BackButton(),
                 Container(
                   height: 200,
                   width: double.infinity,
                   decoration: BoxDecoration(
                       image: DecorationImage(image: NetworkImage(img))),
                 ),
-                Divider(
+                const Divider(
                   color: Colors.grey,
                   height: 10,
                   indent: 20,
@@ -53,7 +53,7 @@ class InfoScreen extends StatelessWidget {
                 ),
                 Text(
                   txt,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
                   ),
@@ -67,12 +67,12 @@ class InfoScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.all(12),
-                  margin: EdgeInsets.only(bottom: 16),
-                  decoration: BoxDecoration(),
+                  padding: const EdgeInsets.all(12),
+                  margin: const EdgeInsets.only(bottom: 16),
+                  decoration: const BoxDecoration(),
                   child: Text(
                     '${itemInfo[id]}',
-                    style: TextStyle(fontSize: 18),
+                    style: const TextStyle(fontSize: 18),
                   ),
                 ),
                 Row(
@@ -84,8 +84,8 @@ class InfoScreen extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.cyan.shade800,
                             foregroundColor: Colors.white,
-                            padding: EdgeInsets.all(8)),
-                        child: Text(
+                            padding: const EdgeInsets.all(8)),
+                        child: const Text(
                           'Get Offer',
                           style: TextStyle(
                               fontSize: 24, fontWeight: FontWeight.bold),
@@ -96,13 +96,13 @@ class InfoScreen extends StatelessWidget {
                         onPressed: () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => SupportScreen(),
+                              builder: (context) => const SupportScreen(),
                             )),
                         style: OutlinedButton.styleFrom(
                             backgroundColor: Colors.cyan.shade800,
                             foregroundColor: Colors.white,
-                            padding: EdgeInsets.all(12)),
-                        icon: Icon(
+                            padding: const EdgeInsets.all(12)),
+                        icon: const Icon(
                           Icons.chat_outlined,
                           size: 30,
                         ))

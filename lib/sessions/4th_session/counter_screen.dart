@@ -23,10 +23,10 @@ class _CounterScreenState extends State<CounterScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Spacer(),
+          const Spacer(),
           Text(
             counter.toString(),
-            style: TextStyle(fontSize: 120),
+            style: const TextStyle(fontSize: 120),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -41,7 +41,7 @@ class _CounterScreenState extends State<CounterScreen> {
                   backgroundColor: Colors.grey.shade500,
                   foregroundColor: Colors.white,
                 ),
-                icon: Icon(
+                icon: const Icon(
                   Icons.remove,
                   size: 60,
                 ),
@@ -56,14 +56,14 @@ class _CounterScreenState extends State<CounterScreen> {
                   backgroundColor: Colors.grey.shade500,
                   foregroundColor: Colors.white,
                 ),
-                icon: Icon(
+                icon: const Icon(
                   Icons.add,
                   size: 60,
                 ),
               ),
             ],
           ),
-          Spacer(),
+          const Spacer(),
           IconButton(
             onPressed: () {
               setState(() {
@@ -73,15 +73,16 @@ class _CounterScreenState extends State<CounterScreen> {
             style: IconButton.styleFrom(
                 backgroundColor: Colors.grey.shade500,
                 foregroundColor: Colors.white,
-                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 32),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 8, horizontal: 32),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20))),
-            icon: Icon(
+            icon: const Icon(
               Icons.replay,
               size: 60,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           )
         ],
